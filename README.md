@@ -16,7 +16,7 @@
 <p>
   <a href="https://github.com/ridhiambala87/Sentinel/actions/workflows/tests.yml"><img src="https://github.com/ridhiambala87/Sentinel/actions/workflows/tests.yml/badge.svg?branch=main" alt="tests"></a>
   <a href="https://github.com/ridhiambala87/Sentinel/actions/workflows/sentinel-sign.yml"><img src="https://github.com/ridhiambala87/Sentinel/actions/workflows/sentinel-sign.yml/badge.svg?branch=main" alt="lock signed by CI"></a>
-  <a href="https://github.com/ridhiambala87/Sentinel/releases/latest"><img src="https://img.shields.io/github/v/release/GarvitAgrawal04/SENTINEL?label=release&color=2457f5" alt="latest release"></a>
+  <a href="https://github.com/ridhiambala87/Sentinel/releases/latest"><img src="https://img.shields.io/github/v/release/ridhiambala87/SENTINEL?label=release&color=2457f5" alt="latest release"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-2457f5" alt="Apache-2.0 licence"></a>
   <img src="https://img.shields.io/badge/python-3.10%2B-2457f5" alt="Python 3.10 or newer">
   <img src="https://img.shields.io/badge/scanner-offline%20%C2%B7%20zero%20dependencies-1b8a5a" alt="the scanner is offline and has zero dependencies">
