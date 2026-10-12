@@ -438,7 +438,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }            # the base ref must be available
-      - uses: GarvitAgrawal04/SENTINEL/action@main
+      - uses: ridhiambala87/sentinel/action@main
         with: { fail-on: compromised }      # or: suspicious | never
 ```
 
@@ -558,7 +558,7 @@ SENTINEL_LLM_MODEL=openai/gpt-oss-20b
 `SENTINEL_LLM_KEY`, then:
 
 ```yaml
-      - uses: GarvitAgrawal04/SENTINEL/action@main
+      - uses: ridhiambala87/Sentinel/action@main
         with: { fail-on: compromised, detonate: "true" }
         env:
           SENTINEL_LLM_KEY: ${{ secrets.SENTINEL_LLM_KEY }}
