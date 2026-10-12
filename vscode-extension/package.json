@@ -1,0 +1,87 @@
+{
+  "name": "sentinel-md",
+  "displayName": "Sentinel",
+  "description": "Shows what a file would make your AI coding agent do. Underlines dangerous lines in CLAUDE.md, AGENTS.md, .cursorrules, settings.json and MCP configs, and explains them in plain English.",
+  "version": "0.3.1",
+  "publisher": "sentinel",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GarvitAgrawal04/SENTINEL"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Linters"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "sentinel.tryDemo",
+        "title": "Sentinel: Try it on a demo file"
+      },
+      {
+        "command": "sentinel.scanFile",
+        "title": "Sentinel: Scan this file"
+      },
+      {
+        "command": "sentinel.doctor",
+        "title": "Sentinel: Doctor — check this file"
+      },
+      {
+        "command": "sentinel.suggestSaferWording",
+        "title": "Sentinel: Suggest a safer wording"
+      },
+      {
+        "command": "sentinel.showReport",
+        "title": "Sentinel: Show the full report"
+      },
+      {
+        "command": "sentinel.howTo",
+        "title": "Sentinel: How to use it"
+      }
+    ],
+    "configuration": {
+      "title": "Sentinel",
+      "properties": {
+        "sentinel.apiUrl": {
+          "type": "string",
+          "default": "http://127.0.0.1:8000",
+          "scope": "machine",
+          "description": "Where your own Sentinel scanner is running. A project cannot change this setting, so a hostile repository cannot redirect your scans."
+        },
+        "sentinel.hostedUrl": {
+          "type": "string",
+          "default": "https://sentinel-ivory-two-76.vercel.app",
+          "scope": "machine",
+          "description": "Hosted demo scanner, used only after you choose it when your own scanner is not running. File contents are sent to it."
+        }
+      }
+    }
+  },
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true,
+      "description": "Sentinel only reads the open file and sends it to the scanner you configured. It never runs anything from the workspace, so it is safe, and most useful, in folders you do not trust."
+    },
+    "virtualWorkspaces": true
+  },
+  "keywords": [
+    "security",
+    "ai",
+    "agents",
+    "claude",
+    "cursor",
+    "mcp",
+    "prompt injection"
+  ],
+  "author": {
+    "name": "Mayan Kamboj and Garvit Agrawal",
+    "url": "https://github.com/GarvitAgrawal04/SENTINEL"
+  }
+}
