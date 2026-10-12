@@ -1023,7 +1023,7 @@ proposing `AGENTS.lock` as an open specification.
 
 **Acknowledgements.** The benign-twin testing idea is borrowed from wormhole-guard. Incident research by Pillar Security,
 Socket, StepSecurity, OpenSourceMalware, Datadog Security Labs, Elastic Security Labs, Microsoft Threat Intelligence, Snyk,
-Aikido, Wiz and Trail of Bits made this project possible. Built for Geeks2Code 2026, Cybersecurity track.
+Aikido, Wiz and Trail of Bits made this project possible.
 
 <div align="center"><br>
   <a href="https://sentinel-ivory-two-76.vercel.app/"><img src="docs/img/btn-live-demo.svg" height="44" alt="Try the live demo"></a>&nbsp;
